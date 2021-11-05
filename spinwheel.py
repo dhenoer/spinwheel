@@ -39,9 +39,10 @@ while True:
 
         time.sleep((i/nrotation)**2)
 
-    print()
+    time.sleep(0.5)     
     strp = part[8:11]
     pointed = re.findall('\d+', strp)
+    print()
     if len(pointed)==1 and strp[1] != '^':
         print('\nBerhenti pada angka', pointed[0].strip())
     else:
