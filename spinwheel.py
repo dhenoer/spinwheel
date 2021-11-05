@@ -37,9 +37,9 @@ while True:
         part = ''.join(strwheel[pos:pos+lenpart])
         print(part, '\r', end='')
 
-        time.sleep((i/nrotation)**2)
+        time.sleep((i/nrotation)**4)
 
-    time.sleep(0.5)     
+    time.sleep(1)     
     strp = part[8:11]
     pointed = re.findall('\d+', strp)
     print()
